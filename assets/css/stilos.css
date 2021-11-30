@@ -44,9 +44,74 @@
     margin: auto;
     padding: 29.5px;
     border-radius: 8px;
-    box-shadow: 7px 13px 37px #000;}
+    box-shadow: 7px 13px 37px #000;
+  }
+
+  .section_1{
+    background: rgba(0, 136, 232, 1);
+    background: -moz-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right bottom,
+      color-stop(0%, rgba(0, 136, 232, 1)),
+      color-stop(0%, rgba(0, 182, 198, 1)),
+      color-stop(100%, rgba(0, 136, 232, 1))
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: -o-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: linear-gradient(
+      135deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
+      color: white;
+    /*margin: 1% 35% 2% 35%;
+    /*padding: 70px;*/
+    /*padding-top: 20;*/
+    /*padding-bottom: 20;*/
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 7px 13px 37px #000;
+    overflow: auto;
+    max-height: 200px;
+  }
+  .section_1::-webkit-scrollbar{
+    width: 7px;
+    background: none;
+  }
+  .section_1::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+    border-right: 2px;
+  }
+
 @media screen and (max-width: 575px){
     .seccion{box-shadow: none; border-radius: 0px;padding-top: 34%;margin: 0;width: 100%;};
+    .section_1{box-shadow: none; border-radius: 0px;margin-top: 100%;};
 }
 
 
@@ -249,28 +314,7 @@ filter: brightness(1.2) grayscale(.5) opacity(.9);}
     font-weight:normal;
 }
 
-.section_1{
-  margin: 1% 35% 2% 35%;
-  /*padding: 70px;*/
-  padding-top: 20;
-  padding-bottom: 20;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-  box-shadow: 7px 13px 37px #000;
-  color: #FFFFFF;
-  overflow: auto;
-  max-height: 200px;
-}
-.section_1::-webkit-scrollbar{
-  width: 7px;
-  background: none;
-}
-.section_1::-webkit-scrollbar-thumb{
-  background: #FFFFFF;
-  border-radius: 5px;
-  border-right: 2px;
-}
+
 .section_3{
   margin: 2% 35% 2% 35%;
   padding: 30px;
