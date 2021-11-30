@@ -38,7 +38,7 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="index.html">Inicio</a></li>
                             <li class="scroll-to-section"><a href="registro.html">Registrar</a></li>
-                            <li class="scroll-to-section"><a href="#services" class="active">Votar</a></li>
+                            <li class="scroll-to-section"><a href="#" class="active">Votar</a></li>
                             <li class="scroll-to-section"><a href="reporte.html">Reporte</a></li>
                             <li class="scroll-to-section"><a href="contacto.html">Contacto</a></li>
                         </ul>
@@ -55,63 +55,68 @@
 
 
     <!-- ***** Features Small Start ***** -->
-    <section class="section">
-        <div class="container">
+        <div class="container-sm pt-sm-5 mt-sm-3">
             <div class="row">
-                <section class="seccion">
-                    <form action="recive.php" method="post">
-                        <div>
+                <div class="col-sm-12 mt-sm-5" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <section class="seccion">
+                        <form action="recive.php" method="post">
                             <strong>Nombre</strong>
+                            <div class="d-flex justify-content-center mt-1">
+                                
+                                <select class="select-css" name="dato">
+                                    <option> Selecciona un nombre --- </option>
+                                    <option>"john"</option>
+                                </select>
+                                <!--<center>
+                                <?PHP
+                                    $link = mysqli_connect("localhost","root","");
+                                    mysqli_select_db($link,"registros");
+                                    $nom= mysqli_query($link,"select id_persona, nombre from personas");
+                                    echo '<select class="select-css" name="dato">';
+                                    echo "<option> Selecciona un nombre --- </option>";
+                                    while ($rem=mysqli_fetch_array($nom)){
+                                        echo "<option>".$rem['id_persona']." - ".$rem['nombre']."</option>";
+                                    }
+                                    echo "</select>";
+                                    mysqli_free_result($nom);
+                                    mysqli_close($link);
+                                ?>
+                                </center>-->
+                            </div>
+                            <br>
+                            <strong>Selecciona un partido político: </strong> 
                             <center>
-                            <?PHP
-                                $link = mysqli_connect("localhost","root","");
-                                mysqli_select_db($link,"registros");
-                                $nom= mysqli_query($link,"select id_persona, nombre from personas");
-                                echo '<select class="select-css" name="dato">';
-                                echo "<option> Selecciona un nombre --- </option>";
-                                while ($rem=mysqli_fetch_array($nom)){
-                                    echo "<option>".$rem['id_persona']." - ".$rem['nombre']."</option>";
-                                }
-                                echo "</select>";
-                                mysqli_free_result($nom);
-                                mysqli_close($link);
-                            ?>
+                                <table class="formu">
+                                    <tr>  
+                                        <td class="cc-selector">
+                                            <INPUT id="PRI" TYPE="radio" NAME="partido" VALUE="PRI" required>
+                                            <br><label FOR="PRI" class="drinkcard-cc PRI"></label>
+                                        </td>
+                                        <td class="cc-selector">
+                                            <INPUT id="PAN" TYPE="radio" NAME="partido" VALUE="PAN" required>
+                                            <br><label for="PAN" class="drinkcard-cc PAN"></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cc-selector">
+                                            <INPUT id="PRD" TYPE="radio" NAME="partido" VALUE="PRD" required>
+                                            <br><label for="PRD" class="drinkcard-cc PRD"></label>
+                                        </td>
+                                        <td class="cc-selector">
+                                            <INPUT id="MORENA" TYPE="radio" NAME="partido" VALUE="MORENA" required>
+                                            <br><label for="MORENA" class="drinkcard-cc MORENA"></label>
+                                        </td>
+                                    </tr>
+                                </table>
                             </center>
-                        </div>
-                        <br>
-                        <strong>Selecciona un partido político: </strong> 
-                        <center>
-                            <table class="formu">
-                                <tr>  
-                                    <td class="cc-selector">
-                                        <INPUT id="PRI" TYPE="radio" NAME="partido" VALUE="PRI" required>
-                                        <br><label FOR="PRI" class="drinkcard-cc PRI"></label>
-                                    </td>
-                                    <td class="cc-selector">
-                                        <INPUT id="PAN" TYPE="radio" NAME="partido" VALUE="PAN" required>
-                                        <br><label for="PAN" class="drinkcard-cc PAN"></label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="cc-selector">
-                                        <INPUT id="PRD" TYPE="radio" NAME="partido" VALUE="PRD" required>
-                                        <br><label for="PRD" class="drinkcard-cc PRD"></label>
-                                    </td>
-                                    <td class="cc-selector">
-                                        <INPUT id="MORENA" TYPE="radio" NAME="partido" VALUE="MORENA" required>
-                                        <br><label for="MORENA" class="drinkcard-cc MORENA"></label>
-                                    </td>
-                                </tr>
-                            </table>
-                        </center>
-                        <div class="boton">
-                            <INPUT TYPE="submit" NAME="enviar" VALUE=" Enviar datos">
-                        </div>
-                    </form>
-                </section>
+                            <div class="boton">
+                                <INPUT TYPE="submit" NAME="enviar" VALUE=" Enviar datos">
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </div>
         </div>
-    </section>
     <!-- ***** Features Small End ***** -->
 
 
