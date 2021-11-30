@@ -43,11 +43,11 @@
     height: 100%;
     margin: auto;
     padding: 29.5px;
-    /*display: flex;
-    justify-content: center;*/
     border-radius: 8px;
-    box-shadow: 7px 13px 37px #000;
-    /*position: relative;*/}
+    box-shadow: 7px 13px 37px #000;}
+@media screen and (max-width: 575px){
+    .seccion{box-shadow: none; border-radius: 0px;padding-top: 34%;margin: 0;width: 100%;};
+}
 
 
 #formulario{
