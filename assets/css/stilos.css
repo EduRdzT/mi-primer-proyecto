@@ -87,11 +87,7 @@
       rgba(0, 136, 232, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
-      color: white;
-    /*margin: 1% 35% 2% 35%;
-    /*padding: 70px;*/
-    /*padding-top: 20;*/
-    /*padding-bottom: 20;*/
+    color: white;
     display: flex;
     justify-content: center;
     border-radius: 8px;
@@ -111,7 +107,6 @@
 
 @media screen and (max-width: 575px){
     .seccion{box-shadow: none; border-radius: 0px;padding-top: 34%;margin: 0;width: 100%;};
-    .section_1{box-shadow: none; border-radius: 0px;margin-top: 100%;};
 }
 
 
