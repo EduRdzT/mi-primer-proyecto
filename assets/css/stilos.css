@@ -43,11 +43,11 @@
     height: 100%;
     margin: auto;
     padding: 29.5px;
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
     border-radius: 8px;
     box-shadow: 7px 13px 37px #000;
-    position: relative;}
+    /*position: relative;*/}
 
 
 #formulario{
@@ -171,11 +171,11 @@ input:-webkit-autofill {-webkit-text-fill-color: #fff;}
     border: white 3px inset;}
 
 
-.BUAP{background-image: url('../../Images/Pri.png');}
-.PRI{background-image: url('../../Images/Pri.png');}
-.PAN{background-image: url('../../Images/Pan.png');}
-.PRD{background-image: url('../../Images/Prd.png');}
-.MORENA{background-image: url('../../Images/Morena.png');}
+/*.BUAP{background-image: url('../images/Pri.png');}*/
+.PRI{background-image: url('../images/Pri.png');}
+.PAN{background-image: url('../images/Pan.png');}
+.PRD{background-image: url('../images/Prd.png');}
+.MORENA{background-image: url('../images/Morena.png');}
 .cc-selector{
     TEXT-align: center;
     padding: 10px;}
